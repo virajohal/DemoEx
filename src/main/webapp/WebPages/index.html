@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>My Web Application</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Welcome to My Web Application</h1>
+    <p>This is a simple web application.</p>
+    <button onclick="showAlert()">Click Me!</button>
+    <div id="content">
+        <p>This is some content that can be dynamically changed.</p>
+    </div>
+    <script>
+        function showAlert() {
+            alert("Button clicked!");
+        }
+        document.getElementById("content").innerHTML = "Content has been changed!";
+    </script>   
+</html>
